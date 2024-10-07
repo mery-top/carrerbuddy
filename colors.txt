@@ -1,0 +1,4 @@
+light blue -  #89d0f9
+light blue - #6ac7fd
+dark blue- #38B6FF
+very light - #b6e1f9
