@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai buddy</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href = "{% static 'aibuddy.css'%}">
+    
+</head>
+<body>
+    <header>
+        <h1>AI Buddify</h1>
+    </header>
+    
+    <div class="wrapper">
+        <div class="inner-wrap">
+            <div class="left-side">
+                <div class="logo" >
+                    <a href="{% url 'home'%}">
+                    <img src = "{% static 'images/cblogo.png'%}" alt = "carrerbuddy">
+                    </a>
+                    <a href="{% url 'home'%}" style="text-decoration: none;">
+                        <h6>carrerbuddy</h6>
+                    </a>
+                </div>
+
+                <div class="buddified">
+                    <h2>Your Buddies</h2>
+                    <div class="buddy-name">
+                        <img src="{% static "images/user1-pic.png" %}" alt="">
+                        <h5>Leo</h5>
+                    </div>
+                    <div class="buddy-name">
+                        <img src="{% static "images/user1-pic.png" %}"alt="">
+                        <h5>Martha</h5>
+                    </div>
+                    <div class="buddy-name">
+                        <img src="{% static "images/user1-pic.png" %}" alt="">
+                        <h5>Genny</h5>
+                    </div>
+                    <div class="buddy-name">
+                        <img src="{% static "images/user1-pic.png" %}" alt="">
+                        <h5>Cucumber</h5>
+                    </div>
+                    <div class="buddy-name">
+                        <img src="{% static "images/user1-pic.png" %}" alt="">
+                        <h5>Yen</h5>
+                    </div>
+                </div>
+
+                
+                <div class="update">
+                    <h3>Update Profile</h3>
+                </div>
+            </div>
+            <div class="center-container">
+
+                <div class="buddies">
+                    <div class="buddies-card">
+                       <img src="{% static "images/user1-pic.png" %}" alt="">
+                       <h2>Jane</h2>
+                       <h3>Interest: Web development, UI/UX</h3>
+                       <div class="bud-button">
+                            <a href="">
+                                <button>View Profile</button>
+                            </a>
+                           <a href="">
+                            <button>Buddify <i class='bx bx-plus-medical bx-rotate-90' style='color:#3dea7d' ></i></button>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="buddies-card">
+                        <img src="{% static "images/user1-pic.png" %}" alt="">
+                        <h2>Leo</h2>
+                        <h3>Interest: Full Stack, MERN</h3>
+                        <div class="bud-button">
+                             <a href="">
+                                 <button>View Profile</button>
+                             </a>
+                            <a href="">
+                             <button>Buddify <i class='bx bx-plus-medical bx-rotate-90' style='color:#3dea7d' ></i></button>
+                            </a>
+                         </div>
+                     </div>
+                     <div class="buddies-card">
+                        <img src="{% static "images/user1-pic.png" %}" alt="">
+                        <h2>Cucumber</h2>
+                        <h3>Interest: Web3, blockchain</h3>
+                        <div class="bud-button">
+                             <a href="">
+                                 <button>View Profile</button>
+                             </a>
+                            <a href="">
+                             <button>Buddify<i class='bx bx-plus-medical bx-rotate-90' style='color:#3dea7d' ></i></button>
+                            </a>
+                         </div>
+                     </div>
+                
+                    
+                </div>
+                <div class="typebox">
+                    <textarea placeholder="Tell me your Interests..."></textarea>
+                    <div class="arrow">
+                        <i class='bx bxs-up-arrow-circle' style='color:#42a165' ></i>
+                    </div>
+                
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

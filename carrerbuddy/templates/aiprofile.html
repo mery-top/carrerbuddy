@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href="{% static 'aiprofile.css'%}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Profile</title>
+</head>
+<body>
+    <center>
+        <div class="box">
+            <img src="{% static 'images/user1-pic.png'%}" alt="pic">
+            {% if submitted%}
+                <p>Form submitted successfully! Redirecting...</p>
+                <script>
+                    setTimeout(function(){
+                        window.location.href = "{% url 'aibuddy' %}";  // Redirect using JavaScript
+                    }, 100);  // Delay 3 seconds before redirecting
+                </script>
+            {% else %}
+            <form method="POST">
+                {% csrf_token %}
+                <div class="textarea-container">
+                    <label for="about">About</label>
+                    {{ form.about }}
+                </div>
+                
+                <div class="textarea-container">
+                    <label for="interest">Interest</label>
+                    {{ form.interest }}
+                </div>
+                
+                <div class="textarea-container">
+                    <label for="wannabe">Wanna be?</label>
+                    {{ form.wanted }}
+                </div>
+                
+                <div class="textarea-container">
+                    <label for="future-plans">Future Plans</label>
+                    {{ form.future }}
+                </div>
+                
+                <button type="submit" >Submit</button>
+            </form>
+            
+            
+            {% endif%}
+
+        </div>
+    </center>
+</body>
+</html>
+
+
+
+
+
+
+

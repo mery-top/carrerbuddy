@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrerbuddy.com</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <script src = "script.js"></script>
+</head>
+<body>
+   
+ <main>
+    <div class = "box">
+        <div class = "inner-box">
+            <div class = "forms-wrap">
+                 <form method="POST" autocomplete="off" class = "sign-in-form">
+                    {% csrf_token %}
+                    <div class="logo">
+                        <img src = "{% static "images/cblogo.png" %}" alt = "carrerbuddy">
+                        <h4>carrerbuddy</h4>
+                    </div>
+                    <div class = "heading">
+                        <h2>Welcome Back</h2>
+                    </div>
+                    <div class = "actual-form">
+                        <div class ="input-wrap">
+                            <input type="text" minlength="4" class="input-field"
+                            required name='username'>
+                            <label>Name</label>
+                        </div>
+
+                        <div class ="input-wrap">
+                            <input type="password" minlength="4" class="input-field"
+                            required name="password">
+                            <label>Password</label>
+                        </div>
+                        <p class = "text">
+                            <a href = "#">Forgot Password</a></p>
+                        <input type="submit" id="sign-in" value="Sign In" class="sign-btn" onclick="window.location.href='home.html'">
+    
+                        <h6 id ="notregis">Not registered yet?</h6>
+                        <a href= "{% url 'signup' %}" class="toggle">Sign Up</a>
+                    </div>
+                    {% if messages %}
+                        {% for message in messages %}
+                            {% if messages.tags == 'error' %}
+                                <center><h6 style="color: firebrick; padding: 20px;">{{message}}</h6></center>
+                            {% else %}
+                                <center><h6 style="color: dodgerblue; padding:20px;">{{message}}</h6></center>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+
+                 </form>
+
+                <div class = "carousel">
+                    <div class = "find-image-box">
+                        <img src = "{% static "images/find.png" %}" id = "find-image" alt = finding>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </main>
+
+</body>
+</html>

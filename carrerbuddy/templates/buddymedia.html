@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddy Media</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="{% static 'buddymedia.css'%}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <header>
+            <div class="logo" style="margin-left:20px;" >
+                <a href="{% url 'home'%}">
+                <img src = "{% static "images/cblogo.png" %}" alt = "carrerbuddy">
+                </a>
+                <a href="{% url 'home'%}">
+                    <h4>carrerbuddy</h4>
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search here...">
+                <i id = "search" class='bx bx-search-alt-2' style='color:#38b6ff' ></i>
+            </div>
+        
+            <!-- Creator Settings Section -->
+            <div class="creator-settings">
+                <img src="{% static "images/user1-pic.png" %}" alt="User">
+                <a href="#">Settings</a>
+                <i class="fa fa-cog"></i>
+            </div>
+    </header>
+    <div class = "wrap-main">
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="{% static "images/user1-pic.png" %}" alt = "">
+                    <textarea rows = "2" placeholder="write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><i class='bx bxs-camera' style='color:#38b6ff' ></i>Photo</li>
+                    <li><i class='bx bx-video-recording' style='color:#38b6ff' ></i>Video</li>
+                    <li><i class='bx bx-calendar-event' style='color:#38b6ff'  ></i>Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="post-author">
+                    <img src = "{% static "images/user1-pic.png" %}">
+                    <div>
+                        <h1>Benjamin</h1>
+                        <small>Founder and CEO of n=bennett</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>While applying to various universities abroad, you might have come across the term 'letter of recommendation.' But what exactly is it? As the name implies, a letter of recommendation is a letter that endorses a student, employee, colleague, or co-worker. It's also referred to as a letter of reference or LOR for short. When given to a student, this letter aids the admission committee in gaining deeper insights into the applicant. Undoubtedly, it's a powerful tool to highlight an applicant's strengths and impactful attributes 
+                    from the perspective of their supervisor, 
+                    mentor, superior, guide, or 
+                    faculty.</p>
+                    <img src="{% static "images/user1-pic.png" %}" alt = "post" width="100%">
+                    <div class = "post-stats">
+                        <div>
+                            <i class='bx bxs-heart-circle' style='color:#38b6ff' ></i>
+                            <span class = "liked-users">Abinav and 75 others</span>
+                        </div>
+                        <div>
+                            <i class='bx bxs-message-dots' style='color:#38b6ff' ></i>
+                            <span>Comment</span>
+                        </div>
+                        <div>
+                            <i class='bx bxs-share-alt' style='color:#38b6ff' ></i>
+                            <span>Share</span>
+                        </div>
+                        <div>
+                            <span>22 comments &middot; 40 shares</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-author">
+                        <img src = "{% static "images/user1-pic.png" %}">
+                        <div>
+                            <h1>Benjamin</h1>
+                            <small>Founder and CEO of n=bennett</small>
+                            <small>2 hours ago</small>
+                        </div>
+                    </div>
+                    <p>While applying to various universities abroad, you might have come across the term 'letter of recommendation.' But what exactly is it? As the name implies, a letter of recommendation is a letter that endorses a student, employee, colleague, or co-worker. It's also referred to as a letter of reference or LOR for short. When given to a student, this letter aids the admission committee in gaining deeper insights into the applicant. Undoubtedly, it's a powerful tool to highlight an applicant's strengths and impactful attributes 
+                        from the perspective of their supervisor, 
+                        mentor, superior, guide, or 
+                        faculty.</p>
+                        <img src="{% static "images/user1-pic.png" %}" alt = "post" width="100%">
+                        <div class = "post-stats">
+                            <div>
+                                <i class='bx bxs-heart-circle' style='color:#38b6ff' ></i>
+                                <span class = "liked-users">Abinav and 75 others</span>
+                            </div>
+                            <div>
+                                <i class='bx bxs-message-dots' style='color:#38b6ff' ></i>
+                                <span>Comment</span>
+                            </div>
+                            <div>
+                                <i class='bx bxs-share-alt' style='color:#38b6ff' ></i>
+                                <span>Share</span>
+                            </div>
+                            <div>
+                                <span>22 comments &middot; 40 shares</span>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+  </div>
+</body>
+</html>

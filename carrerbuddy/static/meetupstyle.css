@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #fffcfc;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    top: 0;
+}
+
+/* Logo Section */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.logo h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* main-box */
+body {
+    background-color: #b6e1f9;
+}
+
+h1{
+    text-align: center;
+    margin: 50px;
+    font-size: 50px;
+    color: #515050;
+}
+  
+/* inner-box */
+.innerbox{
+    display: flex;
+    justify-self: flex-start;
+    gap: 30px;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 500px;
+    height: 600px;
+    position: relative;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.box:hover{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+}
+
+.tags{
+    display: flex;
+    position: relative;
+    border-radius: 30px 30px 0 0;
+    width: 500px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tags h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    position: relative;
+    z-index: 2;
+    color: aliceblue;
+}
+
+.tags img{
+    display: flex;
+    position: absolute;
+    border-radius: 30px 30px 0 0;
+    width: 500px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.box .join-meet{
+    position: absolute;
+    left: 100px;
+    bottom: 170px;
+    width: 300px;
+    height: 50px;
+    margin: 30px 0 30px 0;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: #e1f1fa;
+}
+
+.box button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.box .create-meet{
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    width: 300px;
+    height: 50px;
+    margin: 30px 0 30px 0;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: #e1f1fa;
+}
+
+.box h2{
+    position: absolute;
+    bottom: 290px;
+    left: 37%;
+}

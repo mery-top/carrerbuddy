@@ -1,0 +1,522 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #def2fd ;
+    color: #5f5f5f;
+}
+
+a{
+    text-decoration: none;
+    color: #5f5f5f;
+}
+
+.spacing{
+    padding-left: 13px;
+    padding-top: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;  /* Makes the navbar stay at the top when scrolling */
+    top: 0;           /* Ensures the navbar is positioned at the top */
+    width: 2000px;      /* Ensures the navbar spans the full width of the page */   /* Keeps the navbar on top of other elements */
+    padding: 0px 20px; /* Adds some padding around the content */
+    left: -20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.logo h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding-top: -5px;
+}
+
+.home-container{
+    padding: 20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Left sidebar */
+
+.left-sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
+    margin-top: 70px;
+}
+/* banner */
+.sidebar-profile-box{
+    background-color: white;
+    padding: 7px;
+    border-radius: 30px;
+}
+
+#banner{
+    border-radius: 10px;
+}
+.sidebar-profile-info{
+    padding: 0 25px;
+
+}
+.sidebar-profile-info img{
+    width:90px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 4px;
+    margin-top: -45px;
+
+}
+.sidebar-profile-info h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+.sidebar-profile-info h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+}
+ 
+.sidebar-profile-info ul{
+    list-style: none;
+    margin: 20px 0;
+
+}
+
+.sidebar-profile-info ul li{
+    width: 100%;
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.sidebar-profile-info ul li span{
+    float: right;
+    color: #38B6FF;
+}
+
+.sidebar-activity{
+    background-color: #fff;
+    padding: 5px 25px;
+    margin: 12px 0;
+}
+
+.info-icon{
+    width:40px;
+    height: 40px;
+    float: right;
+    margin-top: 5px;
+
+}
+.sidebar-activity h3{
+    font-size: 21px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0 30px 0;
+ 
+}
+
+.sidebar-activity a{
+    display: block;
+    font-size:15px ;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.sidebar-activity span{
+    font-size: 12px;
+
+}
+
+.sidebar-activity .read-more-link{
+    color:#38B6FF;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+/* right-sidebar */
+.right-sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #6ac7fd;
+}
+.menu .hello{
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 100%;
+    color: black;
+    padding: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.menu li{
+    height: 50px;
+    list-style: none;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+}
+/* Settings */
+.settings{
+    display: flexbox;
+    margin-top: 750px;
+    margin-left: 50px;
+    font-size: 18px;
+    color: black;
+    font-weight: normal;
+    color: #5f5f5f;
+
+}
+.menu .nav-link a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 5px;
+    margin-top: 60px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.menu .nav-link a:hover{
+    transition: 0.4s ease-out;
+    background-color: #fff;
+    color: black;
+}
+
+
+.menu .nav-link .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    font-size: 20px;
+}
+/* main content */
+.main-content{
+    position: absolute;
+    left: 498px;
+    top: 40px;
+}
+
+#username{
+    color: #222;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 25px;
+}
+/* Parent container to align notifications and goals side by side */
+.both {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; /* Align both boxes at the top (same height) */
+    padding: 20px;
+    gap: 20px; /* Optional: space between the two boxes */
+    width: 100%; /* Ensures it takes up full width */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin-top: 20px;
+}
+
+/* Notifications styling */
+.notifications {
+    background-color: #fff;
+    width: 400px;
+    height: auto;
+    border-radius: 30px;
+    padding: 0 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better styling */
+}
+
+.notifications h1 {
+    color: #333;
+    font-size: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.notifications a span {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.notification-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-item:hover a,
+.notification-item:hover span {
+    background-color: #89d0f9;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.notify-icon {
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+/* Scroll bar */
+.scroll-notifications {
+    height: 300px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+}
+
+.scroll-notifications::-webkit-scrollbar {
+    height: 5px;
+    width: 8px; /* Set width of the scrollbar */
+}
+
+.scroll-notifications::-webkit-scrollbar-thumb {
+    background-color: #6ac7fd; /* Scrollbar color */
+    border-radius: 10px; /* Rounded scrollbar */
+}
+
+.scroll-notifications::-webkit-scrollbar-thumb:hover {
+    background-color: #38B6FF; /* Darker on hover */
+}
+/* todo-list */
+
+.goals {
+    width: 500px;
+    height: auto;
+    padding: 0 20px;/* Padding for smaller screens */
+}
+
+/* Todo app styling */
+.todo-app {
+    width: 100%; /* Full width of the parent .goals */
+    background-color: white;
+    padding: 30px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better styling */
+}
+
+.goals h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+.todo-app h2 {
+    font-size: 2.2rem;
+    color: black;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin: 30px 0;
+    width: 100%; /* Make it fill the container */
+    max-width: 95%; /* Optional limit for inner elements */
+    margin-inline: auto;
+}
+
+.todo-app input {
+    color: black;
+    font-size: 12px;
+    width: 100%;
+    flex: 1;
+    border: 1px solid #38B6FF;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+#add-btn{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #38B6FF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+
+}
+
+.goals ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.goals li{
+    font-weight: 700;
+    list-style: none;
+    font-size: 15px;
+    padding-left: 30px;
+    padding: 10px 30px;
+    user-select: none;
+    width: 80%;
+    min-height: 50px;
+    margin: 0 auto;
+    border-radius: 5rem;
+    color: #38B6FF;
+
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #38B6FF;
+
+    display: flex;
+    align-items: center;
+    transition: .2s ease-in-out;
+}
+
+
+.goals li.checked{
+    color: #222;
+    text-decoration: line-through;
+}
+
+.goals span{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    font-size: 1.4rem;
+    color: #222;
+    line-height: 40px;
+    text-align: center;
+}
+/* Scrolling todo-list */
+.list-container {
+    max-height: 150px; /* Adjust this height as per your design */
+    overflow-y: auto; /* Enables scrolling 
+    padding: 10px; /* Optional: adds padding inside the list */
+}
+
+.list-container::-webkit-scrollbar-thumb {
+    background-color: #6ac7fd; /* Scrollbar color */
+    border-radius: 10px; /* Rounded scrollbar */
+}
+
+/* Recent Buddies */
+.recent-buddies h1 {
+    color: #4f4f4f;
+    font-size: 22px;
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin to push the card content down */
+    margin-left: 180px;
+}
+
+.imgbox {
+    position: relative;
+    margin: 0 auto; /* Center the image */
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+}
+
+.imgbox img {
+    width: 100%;
+    height: 100%;
+    border-radius: 70px;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 100px;
+    height: 40px; /* Fix the height for consistent button placement */
+    overflow: hidden; /* Hide overflow text if it exceeds the fixed height */
+}
+
+.card a {
+    display:inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #53c0ff;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 14px;
+    position: relative; /* Ensure it's positioned consistently within the card */
+}
+
+.recent-buddies{
+    display: flex;
+    flex-direction: row;
+}
+
+.card ul {
+    list-style-type: none;
+    margin-left: 100px;
+    margin: 6px;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    display: flex; /* Flexbox layout for row arrangement */
+    justify-content: center; /* Space between each element */
+    flex-wrap: wrap; /* Allows wrapping if the items overflow */
+    gap: 4rem;
+}
+
+/* AI Button */
+
+.Ai-button{
+    position: relative;
+    background-color: #222;
+    color: white;
+    font-size: 20px;
+    padding: 15px 40px 15px 40px;
+    bottom: -150px;
+    border: none;
+    left: 750px;
+    border-radius: 30px;
+
+}
