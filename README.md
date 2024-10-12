@@ -8,7 +8,8 @@ In today’s fast-paced world, I’ve realized that finding the right peers is k
 ##What It Does
 
 CareerBuddy uses AI to match you with peers who share your career goals, interests, and skill backgrounds, forming a close-knit community of upskilling partners.
-Features
+
+## Features
 
 ### 1. AIBuddify
 > Uses AI to connect you with individuals who share similar interests and career goals globally.
