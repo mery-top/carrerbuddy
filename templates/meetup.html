@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'meetupstyle.css'%}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetups</title>
+</head>
+<body>
+    <header>
+        <div class="logo" style="margin-left:20px;" >
+            <a href="{% url 'home'%}">
+            <img src = "{% static "images/cblogo.png" %}" alt = "carrerbuddy">
+            </a>
+            <a href="{% url 'home'%}">
+                <h4>carrerbuddy</h4>
+            </a>
+        </div>
+    </header>
+        <div class="main-frame">
+            <h1>Meetups</h1>
+            <div class="innerbox">
+                <div class="box">
+                    <div class="tags">
+                        <img src ="{% static "images/tag1.png" %}" alt = "tags">
+                        <h1>Study Rooms</h1>
+                    </div>
+                    <h2>Let's Study!</h2>
+                    <button class = "create-meet">Join Room</button>
+                    <a href="{% url 'studycall'%}">
+                        <button class = "join-meet">Create Room</button>
+                    </a>
+                    
+                </div>
+                <div class="box">
+                    <div class="tags">
+                        <img src = "{% static "images/tag2.png" %}" alt = "tags">
+                        <h1>Group Streams</h1>
+                    </div>
+                    <h2>Let's Group!</h2>
+                    <button class = "create-meet">Join Room</button>
+                    <button class = "join-meet">Create Room</button>
+    
+                </div>
+                <div class="box">
+                    <div class="tags">
+                        <img src = "{% static "images/tag3.png" %}" alt = "tags">
+                        <h1>Live Streams</h1>
+                    </div>
+                    <h2>Let's Stream!</h2>
+                    <button class = "create-meet">Join Room</button>
+                    <button class = "join-meet">Create Room</button>
+    
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="{% static 'homestyle.css'%}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" >
+                <a href="{% url 'home'%}">
+                <img src = "{% static "images/cblogo.png" %}" alt = "carrerbuddy">
+                </a>
+                <a href="{% url 'home'%}" style="text-decoration: none;">
+                    <h4>carrerbuddy</h4>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class = "home-container">
+        <!-- Left sidebar -->
+        <div class = "left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src = "{% static "images/user1-banner.png" %}" id = "banner" alt = "profile" width="100%">
+             <div class="sidebar-profile-info">
+                <!-- user image -->
+                <img src = "{% static "images/user1-pic.png" %}" alt = "profile" width="90%">
+                 <h1>{{user.username}}</h1>
+                 <h3>Web Developer at Microsoft</h3>
+                 <ul>
+                    <li>Followers<span>52</span></li>
+                    <li>BuddyStreak<span>360</span></li>
+                    <li>Level<span>Beginner</span></li>
+                 </ul>
+             </div>
+             </div>
+             <div class="sidebar-activity">
+                <img src="{% static "images/trend.png" %}" class = "info-icon" alt = "trend">
+                <h3>Trending Topics</h3>
+                <a href = "#">High Demand for Css Developers</a>
+                    <span>1d ago @buddies; 30,780 readers</span>
+
+                <a href = "#">Python Developers Community (moderated)</a>
+                    <span>1d ago @buddies; 30,780 readers</span>
+
+                <a href = "#">Full Stack Developer - Java technologies, UI & Microservices</a>
+                    <span>1d ago @buddies; 20,980 readers</span>
+
+                <a href = "#">AWS She Builds</a>
+                    <span>1d ago @buddies; 10,760 readers</span><
+
+                <a href = "#">Machine Learning Community (Moderated)</a>
+                    <span>1d ago @buddies; 9,580 readers</span>
+
+                <a href="" class = "read-more-link"> Read More</a>
+             </div>
+        </div>
+        <!-- main-content -->
+        <div class = "main-content">
+            <h1 id="username"> Welcome {{user.username}}</h1>
+            <!-- Notifications box -->
+             <div class = "both">
+                <div class = "notifications">
+                    <div class = "scroll-notifications">
+                        <div class="sidebar-activity" id = "notifications">
+                            <h3>Notifications</h3>
+                            
+                            <div class="notification-item">
+                                <a href="#">Python Developers Community (moderated)</a>
+                                <span>1d ago - Meetups</span>
+                            </div>
+                            
+                            <div class="notification-item">
+                                <a href="#">Full Stack Developer</a>
+                                <span>1d ago - Roadmap</span>
+                            </div>
+                            
+                            <div class="notification-item">
+                                <a href="#">Python Developers Community (moderated)</a>
+                                <span>1d ago - Buddy Groups</span>
+                            </div>
+                         </div>
+                         
+                    </div>
+                </div>
+                 <!--Goals box -->
+                <div class = "goals">
+                    <div class = "todo-app">
+                        <h1>Reminders</h1>
+                        <div class = "row">
+                            <input type = "text" id = "todo-box" placeholder = "Add task">
+                            <button id = "add-btn">Add</button>
+                        </div>
+                        <ul class = "list-container">
+                            <li class = "unchecked">
+                                Multinotes assign<span><i class="fa-solid fa-trash"></i></span>
+        
+                            </li>
+                            <li class = "checked">
+                                Workout<span><i class="fa-solid fa-trash"></i></span>
+        
+                            </li>
+                            <li class = "unchecked">
+                                Workout<span><i class="fa-solid fa-trash"></i></span>
+        
+                            </li>
+                            <li class = "checked">
+                                Workout<span><i class="fa-solid fa-trash"></i></span>
+        
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+
+             </div>
+             <div class = "recent-buddies">
+                <div class = "card">
+                    <h1>Recent Buddies</h1>
+                    <ul>
+                        <div class = "imgbox">
+                            <img src="{% static "images/user1-pic.png" %}" alt = "mmm">
+                            <h2>Alina smith</h2>
+                            <a href ="#">Message</a>
+                        </div>
+    
+                        <div class = "imgbox">
+                            <img src="{% static "images/user1-pic.png" %}" alt = "mmm">
+                            <h2>AMeer</h2>
+                            <a href ="#">Message</a>
+                        </div>
+    
+                        <div class = "imgbox">
+                            <img src="{% static "images/user1-pic.png" %}" alt = "mmm">
+                            <h2>Alinah</h2>
+                            <a href ="#">Message</a>
+                        </div>
+    
+                        <div class = "imgbox">
+                            <img src="{% static "images/user1-pic.png" %}" alt = "mmm">
+                            <h2>Alinasmith</h2>
+                            <a href ="#">Message</a>
+                        </div>
+    
+                        <div class = "imgbox">
+                            <img src="{% static "images/user1-pic.png" %}" alt = "mmm">
+                            <h2>Alina smith</h2>
+                            <a href ="#">Message</a>
+                        </div>
+                    </ul>
+                    
+
+                </div>
+            </div>
+
+            <div class = "Ai">
+                <a href="{% url 'aiprofile'%}">
+                    <button class = "Ai-button"> AI Buddify</button>
+                </a>
+            </div>
+
+        
+        </div>
+        <!-- right-container -->
+        <div class = "right-sidebar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <span class = "hello"></span>
+                    </li>
+                    <li class="nav-link">
+                        <a href="home.html">
+                            <i class='bx bx-home-alt icon'></i>
+                                <span class = "nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="{% url 'buddymedia'%}">
+                            <i class='bx bxs-group icon'></i>
+                                <span class = "nav-text">Buddy Media</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="{% url 'buddygroup'%}">
+                            <i class='bx bx-chat icon'></i>
+                                <span class = "nav-text">Buddy Groups</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-map-alt icon'></i>
+                                <span class = "nav-text">Roadmap</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-notepad icon'></i>
+                                <span class = "nav-text">MultiNotes</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="{% url 'meetup'%}">
+                            <i class='bx bx-shape-circle icon'></i>
+                                <span class = "nav-text">Meetup</span>
+                        </a>
+                    </li>
+                    <li class=>
+                        <div class = "settings">
+                            <a href = "{% url 'logout'%}">
+                                <span class="settings" href = "home.html"> Logout <i class='bx bx-log-out'></i></span>
+                            </a>
+                        
+                        </div>
+                        
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

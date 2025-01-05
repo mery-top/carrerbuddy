@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddy Groups</title>
+    <link rel = "stylesheet" href = "{% static 'buddygroups.css'%}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" >
+                <a href="{% url 'home'%}">
+                <img src = "{% static "images/cblogo.png" %}" alt = "carrerbuddy">
+                </a>
+                <a href="{% url 'home'%}" style="text-decoration: none;">
+                    <h4>carrerbuddy</h4>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- main container -->
+    <div class="container">
+        <!-- left container -->
+        <div class="left-side">
+            <!-- User-image -->
+            <div class="box-header">
+                <div class="user-img">
+                    <img src = "{% static "images/user1-pic.png" %}" class = "cover" alt = "USR">
+                </div>
+            </div>
+            <!-- search -->
+            <div class="search-chat">
+                <div>
+                    <input type = "text" placeholder="Search or start a new chat">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+            </div>
+            <!-- chat list -->
+             <div class="chatlist">
+                <div class="block active">
+                    <div class="imgbx">
+                        <img src = "{% static "images/user1-pic.png" %}"class = "cover" alt = "img">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>William</h4>
+                            <p class = "time">10:56</p>
+                        </div>
+                        <div class="message-p">
+                            <p>How to complete this one?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread">
+                    <div class="imgbx">
+                        <img src = "{% static "images/user1-pic.png" %}" class = "cover" alt = "img">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>John</h4>
+                            <p class = "time">9:56</p>
+                        </div>
+                        <div class="message-p">
+                            <p>Hello?</p>
+                            <b>1</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread">
+                    <div class="imgbx">
+                        <img src = "{% static "images/user1-pic.png" %}" class = "cover" alt = "img">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Akthar</h4>
+                            <p class = "time">Yesterday</p>
+                        </div>
+                        <div class="message-p">
+                            <p>What was that About?</p>
+                            <b>1</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="imgbx">
+                        <img src = "{% static "images/user1-pic.png" %}" class = "cover" alt = "img">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Ria</h4>
+                            <p class = "time">Yesterday</p>
+                        </div>
+                        <div class="message-p">
+                            <p>In today's meeting we discussed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="imgbx">
+                        <img src = "{% static "images/user1-pic.png" %}" class = "cover" alt = "img">
+                    </div>
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Buddies Forever</h4>
+                            <p class = "time">Yesterday</p>
+                        </div>
+                        <div class="message-p">
+                            <p>what did you for?</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+        <!-- right container -->
+        <div class="right-side">
+            <div class="right-box-header">
+                <div class="img-text">
+                    <div class="user-img">
+                        <img src = "{% static "images/user1-pic.png" %}" class = "cover" alt ='mmm'>
+                    </div>
+                    <h4>William<br>
+                        <span>online</span>
+                    </h4>
+                </div>
+                <ul class = 'nav_icons'>
+                    <li><ion-icon name="search-outline"></ion-icon></li>
+                    <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+
+                </ul>
+            </div>
+                <!--chatbox-->
+             <div class="chatbox">
+                <div class="message my-message">
+                    <p>Hi<br><span>12:15</span> </p>
+                </div>
+                <div class="message frnd-message">
+                    <p>Hello<br><span>12:15</span> </p>
+                </div>
+                <div class="message my-message">
+                    <p>What are you doing?<br><span>12:16</span> </p>
+                </div>
+                <div class="message frnd-message">
+                    <p>Working on Full stack learning...<br><span>12:16</span> </p>
+                </div>
+             </div>
+
+             <div class="chatbox-input">
+                <ion-icon name = "happy-outline"></ion-icon>
+                <ion-icon name = "attach-outline"></ion-icon>
+                <input type = "text" placeholder="Type a message">
+                <ion-icon name = "mic"></ion-icon>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

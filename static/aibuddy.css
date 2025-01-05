@@ -1,0 +1,249 @@
+
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+body{
+    min-height: 100vh;
+    background: #0b0d15;
+    color: #a2a5b3;
+    align-content: center;
+
+}
+
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 49%;
+    transform: translateX(5%);
+    font-size: 50px;
+    background-image: linear-gradient(43deg,#547360 0%, #4dd37e 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* left side */
+.left-side{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    border-right: solid;
+    border-width: 6px;
+    border-image: linear-gradient(45deg, cyan, #00ff95) 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: row;
+    position: relative;
+    right: -10px;
+}
+
+.logo img {
+    width: 60px;
+    position: absolute;
+    top: 20px;
+}
+
+.left-side h6{
+    top: 0;
+    position: absolute;
+    left: 70px;
+    font-size: 17px;
+    background-image: linear-gradient(45deg, cyan, #00ff95);
+    -webkit-background-clip: text;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+}
+
+.buddy-name img{
+  box-sizing: border-box;
+  width: 50px;
+  align-self: center;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0px;
+  padding: 3px;
+  background-color: white;
+}
+.buddified{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  background-image: linear-gradient(43deg,#27322b 0%, #4dd37e 46%, #26bf8e 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  margin: 30px;
+  margin-top: 90px;
+  &::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+}
+.buddy-name{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #a2a5b3;
+  margin: 10px;
+  overflow-y: auto;
+}
+
+.update{
+  position: fixed;
+  bottom: 20px;
+  left: 150px;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4dc97c;
+}
+/* main content */
+
+/* Center container for the textarea */
+.typebox {
+  display: flex;
+  flex-direction: row;
+  position: fixed; /* Keeps the typebox fixed to the viewport */
+  left: 60%; /* Center it horizontally */
+  bottom: 20px; /* Position it at the bottom of the page */
+  transform: translateX(-50%); /* Shift it back by 50% of its own width for perfect centering */
+  align-items: center;
+  width: 60%; /* Maintain the width */
+  gap: 1rem; /* Space between the items */
+  z-index: 1000; /* Bring it to the front */
+}
+
+
+/* TEXT AREA */
+textarea {
+    width: 100%;
+    font-size: 17px;
+    height: 45px;
+    padding: 20px 50px 10px; /* Set padding for both top and left */
+    background: transparent;
+    border: solid;
+    border-width: 1px;
+    border-radius: 40px;
+    border-color: #43886b;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #959595; /* Text color */
+}
+
+textarea::placeholder {
+    font-weight: 500;
+    font-size: 17px;
+    color: #959595; /* Lighter color for the placeholder */
+}
+
+textarea:focus {
+   border-color: #00ff95;
+}
+
+/* Upload arrow button */
+.arrow{
+    font-size: 50px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.arrow:hover{
+    transform: translateY(-10%);
+}
+
+/* biddies card */
+.buddies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px; /* Maintain the gap between the cards */
+  justify-content: center; /* Center the cards horizontally */
+  align-items: center;
+  align-content: center; /* Center the cards vertically */
+  bottom: 150px;
+  width: 70%;
+  height: auto;
+  top: 30px;
+}
+.buddies-card{
+    margin: 0;
+    padding: 2em;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    justify-content: center;
+    left: 30%;
+  }
+
+
+  .buddies-card img{
+    box-sizing: border-box;
+    width: 90px;
+    align-self: center;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0px;
+    border: 5px solid #61b780;
+    padding: 3px;
+    background-color: white;
+}
+  
+  @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  .buddies-card::after, .buddies-card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+  }
+  .buddies-card::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+  }
+  @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
+
+  .buddies-card .bud-button{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+  }
+  .buddies-card button{
+    border: 1px solid #3dea7d;
+    background-color: #0b0d15;
+    color: #959595;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 5px;
+    transition: 0.4s ease;
+}

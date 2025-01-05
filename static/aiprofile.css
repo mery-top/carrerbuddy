@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background: #0b0d15;
+    font-family: 'Poppins', sans-serif;
+}
+
+*:focus{
+    outline: none;
+}
+
+.box{
+    box-sizing: border-box;
+    width: 450px;
+    height: 730px;
+    border: 2px solid  #3dea7d;
+    box-shadow: -3px -3px 7px #ffffff73,
+                3px 3px 5px rgba(94,104, 121, 0.288);
+    border-radius: 5px;
+    background-color: black;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+img{
+    box-sizing: border-box;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 30px;
+    margin-bottom: 30px;
+    border: 5px solid #61b780;
+    padding: 3px;
+    background-color: white;
+}
+
+
+
+.form-control {
+    display: block;
+    box-sizing: border-box;
+    background: none;
+    color: #3dea7d;
+    margin-bottom: 30px;
+    padding: 4px;
+    width: 300px;
+    height: 50px; /* Adjusted height to be larger */
+    border: none;
+    border-bottom: 2px solid #3dea7d;
+    border-bottom-right-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+
+label {
+    font-size: 17px;
+    color: #959595;
+    display: block;
+    margin-bottom: 10px; /* Space between label and textarea */
+    font-weight: 500;
+    text-align: left; /* Align the label text to the left */
+    padding-left: 80px; /* Align with the padding of the textarea */
+}
+
+button{
+    border: 1px solid #3dea7d;
+    background-color: #0b0d15;
+    color: #959595;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 0px;
+    transition: 0.4s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
