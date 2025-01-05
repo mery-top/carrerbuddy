@@ -1,4 +1,4 @@
-# CareerBuddy 🚀
+# CareerBuddy Prototype 🚀
 
 > Unlock your potential with **CareerBuddy** – a platform designed to connect you with like-minded peers who share your career goals, interests, and skills. Using AI, CareerBuddy builds a supportive community where you can collaborate 🤝, upskill 📚, and stay on track with your aspirations 🌟.
 
@@ -55,7 +55,7 @@ This feature provides an interactive environment for real-time learning, peer di
 
 ---
 
-## 💻 **First Hackathon Proposal**  
+## 💻 **First Ideathon Proposal**  
 
 I created **CareerBuddy** as an idea and a prototype for my first hackathon 🎉. The project aims to solve real-world challenges like isolation in career planning and lack of access to like-minded peers. During the hackathon, I focused on:  
 
