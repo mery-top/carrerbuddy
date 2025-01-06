@@ -57,7 +57,7 @@ This feature provides an interactive environment for real-time learning, peer di
 
 ## 💻 **First Ideathon Proposal**  
 
-I created **CareerBuddy** as an idea and a prototype for my first hackathon 🎉. The project aims to solve real-world challenges like isolation in career planning and lack of access to like-minded peers. During the hackathon, I focused on:  
+I created **CareerBuddy** as an idea and a prototype for my first ideathon 🎉. The project aims to solve real-world challenges like isolation in career planning and lack of access to like-minded peers. During the hackathon, I focused on:  
 
 - 🌟 **Designing the user flow**: Making it simple and intuitive for users to connect and collaborate.  
 - 💻 **Prototyping core features**: From AI-powered matchmaking to real-time note-sharing, the prototype highlights the key functionalities of the platform.  
