@@ -42,7 +42,6 @@ CareerBuddy uses AI 🤖 to match you with peers who share your career goals, in
 ### 6. **Meet-Up** 💬  
 > **Form virtual study rooms, live-streaming sessions, and group discussions.**  
 
-This feature provides an interactive 
 ---
 
 ## 💻 **First Ideathon Proposal**  
